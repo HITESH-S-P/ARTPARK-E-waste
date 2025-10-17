@@ -225,26 +225,26 @@ st.markdown("""
     }
 
     /* ---------- FOOTER SIGNATURE ---------- */
-    .footer {
-        position: fixed;
-        bottom: 10px;
-        right: 15px;
-        background: linear-gradient(90deg, #2c5234, #4c7c5c, #2c5985);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600;
-        font-family: 'Poppins', sans-serif;
-        font-size: 15px;
-        letter-spacing: 0.5px;
-        animation: fadeIn 3s ease-in-out;
-        text-shadow: 0px 0px 12px rgba(76, 124, 92, 0.3);
-        user-select: none;
-    }
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 15px; /* This was changed from 'right' */
+    background: linear-gradient(90deg, #2c5234, #4c7c5c, #2c5985);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    animation: fadeIn 3s ease-in-out;
+    text-shadow: 0px 0px 12px rgba(76, 124, 92, 0.3);
+    user-select: none;
+}
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(8px); }
-        to { opacity: 1; transform: translateY(0px); }
-    }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
 </style>
 
 <div class="footer">Developed by <strong>Aneesh</strong></div>
