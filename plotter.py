@@ -12,6 +12,15 @@ from streamlit_folium import st_folium
 from folium.plugins import MarkerCluster
 from datetime import datetime
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.set_page_config(
     page_title="PDF Address Extractor",
     page_icon="📄",
@@ -542,3 +551,4 @@ if uploaded_file:
 else:
     st.info("Please upload a PDF to start.")
 st.markdown("</div>", unsafe_allow_html=True)
+
